@@ -1,0 +1,44 @@
+.user-card { padding: 0 !important; }
+
+.user-cover {
+  height: 6em;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #48aae6;
+  border-radius: 8px 8px 0 0;
+}
+.user-card .user-info {
+  position: relative; padding-top: 3.5em;
+}
+
+.user-info > .profile-pic {
+  position: absolute;
+  top: -2.2em; left: 0.7em;
+  border: 3px solid #fff;
+}
+
+.user-info .user-handle {
+  position: absolute;
+  left: 35%; top: 0.8em;
+}
+
+.user-handle > .name { font-weight: bold; display: block; }
+.user-handle > .handle { font-size: 0.9em; }
+
+.user-stat-list {
+  display: flex; justify-content: space-between;
+  padding: 1em;
+}
+.user-stat-list .user-stat-item {
+  flex: 1; cursor: pointer;
+}
+.user-stat-item > .stat-type {
+  display: block; font-size: 0.7em;
+  font-weight: bold; margin-bottom: 0.5em;
+
+  transition: color 0.15s ease-in-out;
+}
+.user-stat-item > .stat-value { font-weight: bold; }
+
+.user-stat-item:hover > .stat-type { color: #1b95e0; }

@@ -1,0 +1,46 @@
+.follow-card { padding: 0 !important; }
+
+.follow-list {}
+.follow-item {
+  display: flex; align-items: center;
+  margin: 0.75em 0; padding-bottom: 0.56em;
+  border-bottom: 1px solid #ececec;
+}
+
+.follow-list > .follow-item:last-child {
+  margin-bottom: 0; border: none;
+  padding-bottom: 0.1em;
+}
+
+.follow-section { margin-left: 0.8em; }
+
+.user-label {
+  font-size: 0.9em; cursor: pointer;
+  margin-bottom: 0.4em;
+}
+.user-label > .name {
+  font-weight: bold;
+  transition: color .2s ease-in-out;
+}
+.user-label > .handle { padding-left: 0.6em; }
+.user-label > .elapsed {
+  position: relative; margin-left: 1em;
+}
+.user-label > .elapsed:before {
+  position: absolute; content: '\b7';
+  left: -0.6em;
+}
+
+.user-label:hover > .name { color: #1b95e0; }
+
+/* Card Footer styles */
+.card-footer {
+  padding: 1em 0.9375em;
+  border-top: 1px solid #ececec;
+}
+.card-footer > .icon {
+  font-size: 0.8em; margin-right: 0.7em;
+}
+.card-footer > .text {}
+
+.follow-content-wrapper { padding: 0.9375em; }

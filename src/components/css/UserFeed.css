@@ -1,0 +1,48 @@
+
+.user-feed {}
+
+.tweet-card {
+  padding: 0.8em;
+  border-bottom: 1px solid #ececec;
+  cursor: pointer;
+}
+.tweet-card:last-child { border-bottom: none; }
+
+.retweet-panel { position: relative; margin-bottom: 1em; }
+.retweet-panel > .icon { position: absolute; left: 3.4em; }
+.retweet-panel > .text { margin-left: 5.64em; }
+
+.tweet-panel { display: flex; }
+
+.tweet-panel > .user-pic-pane {}
+.tweet-panel > .tweet-details-pane {
+  margin-left: 0.8em; position: relative;
+}
+
+.tweet-details-pane > .user-label {}
+.tweet-details-pane > .tweet-text-pane {
+  font-size: 0.9em; margin-bottom: 0.8em;
+}
+.tweet-details-pane > .tweet-image-pane {}
+.tweet-details-pane > .opt-btn {
+  position: absolute; font-size: 1.3em;
+  top: -0.2em; right: 0; color: #c1c1c1;
+}
+
+.tweet-image-pane > .tweet-image { 
+  width: 100%; border-radius: 4px;
+}
+
+.tweet-btn-panel { display: flex; margin-top: 0.6em; }
+.tweet-btn-panel-item {
+  min-width: 5em; cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+.tweet-btn-panel-item > .icon { margin-right: 0.8em; }
+.tweet-btn-panel-item > .value {
+  font-size: 0.8em; font-weight: bold;
+}
+
+.tweet-btn-panel-item:hover { color: #1b95e0; }
+.tweet-btn-panel-item.btn-retweet:hover { color: #43a047; }
+.tweet-btn-panel-item.btn-like:hover { color: #f44336; }

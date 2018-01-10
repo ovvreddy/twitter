@@ -1,0 +1,57 @@
+
+.header-wrapper {
+  height: 2.875em;
+  box-shadow: 0 1px 0.1em rgba(0, 0, 0, 0.1);
+
+  position: fixed; z-index: 2000;
+  background-color: #fff;
+  left: 0; right: 0; top: 0;
+}
+
+.header-wrapper .container {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+
+.nav-links {
+  margin: 0; padding: 0; height: 100%;
+  list-style: none; display: flex;
+}
+.nav-link-item {
+  display: flex; align-items: center;
+  padding: 0 0.875em; font-size: 1.1em;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+
+  /* Transition props */
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link-item:hover {
+  color: #1b95e0; border-color: #1b95e0;
+}
+.nav-link-active {
+  color: #1b95e0; border-color: #1b95e0;
+}
+
+.nav-link-item > .icon {}
+.nav-link-item > .text {
+  font-size: 0.7em; font-weight: bold;
+  user-select: none; display: none;
+}
+
+.twitter-logo {
+  font-size: 1.25em;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1200px) {
+  .container { max-width: 1190px !important; }
+
+  .nav-link-item > .icon { padding-right: 0.4em; }
+  .nav-link-item > .text { display: inherit; }
+}

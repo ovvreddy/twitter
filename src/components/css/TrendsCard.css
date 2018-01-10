@@ -1,0 +1,27 @@
+.trends-card {}
+.trends-list { margin: 0; padding: 0; list-style: none; }
+
+.trends-list .trend-item {
+  margin: 1em 0; font-size: .9em;
+}
+.trend-item > .trend-title {
+  font-weight: bold; cursor: pointer;
+  display: block; line-height: 1.2;
+}
+.trend-item > .trend-title:hover {
+  text-decoration: underline;
+}
+.trend-item > .trend-stats { font-size: 0.8em; }
+
+.card-options { display: flex; align-items: center; }
+.card-options .title {
+  font-size: 1.125em; font-weight: bold;
+}
+.card-options .option {
+  font-size: 0.7em; margin-left: 1em;
+  position: relative;
+}
+.card-options .option:before {
+  position: absolute;
+  content: '\b7'; left: -0.6em;
+}

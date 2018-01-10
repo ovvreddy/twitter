@@ -1,0 +1,18 @@
+
+.color-gray { color: #66757f; }
+.color-accent-light { color: #48aae6; }
+.color-accent-dark { color: #1b95e0; }
+
+* { outline: none; box-sizing: border-box; }
+
+.container{
+  max-width: 890px; min-width: 890px;
+  margin: 0 auto;
+}
+
+.text-small, .link-small { font-size: 0.7em; }
+.link-small { text-decoration: none; }
+.link-small:hover {
+  text-decoration: underline;
+  color: #1b95e0;
+}
